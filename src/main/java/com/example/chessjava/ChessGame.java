@@ -6,7 +6,6 @@ import com.example.chessjava.engine.GameMode;
 import com.example.chessjava.engine.board.ChessBoard;
 import com.example.chessjava.engine.board.Move;
 
-import java.util.List;
 
 public class ChessGame {
     public static void main(String[] args) {
@@ -39,7 +38,7 @@ public class ChessGame {
         }
     }
     private static void singlePlayerGame(ChessBoard chessBoard, Menu menu){
-        CPUPlayer cpuPlayer = new CPUPlayer(chessBoard, 2);
+        CPUPlayer cpuPlayer = new CPUPlayer(chessBoard, 4);
         while(true){
             menu.printBoard(chessBoard);
             try {
